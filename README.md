@@ -15,6 +15,7 @@
 *   **🚀 易于部署**: 使用 Node.js 和 PM2，可以轻松地在任何 VPS 上实现 7x24 小时稳定运行。
 *   应用实例（screenshots）
 *   ![6VN0BedfMx69PpBn5U1qS8LHMJGnbxyE.webp](https://cdn.nodeimage.com/i/6VN0BedfMx69PpBn5U1qS8LHMJGnbxyE.webp)
+*   ![ZWhAFJFTylEOEkgY2a4nWqtaebkCDyl3.webp](https://cdn.nodeimage.com/i/ZWhAFJFTylEOEkgY2a4nWqtaebkCDyl3.webp)
 
 ---
 
