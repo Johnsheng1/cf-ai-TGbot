@@ -25,6 +25,13 @@
     *   `Account ID`
     *   `AI Gateway Name`
     *   `API Token` (具有 AI Gateway 读写权限)
+    *   https://dash.cloudflare.com/profile/api-tokens
+    *   单击创建令牌
+    *   使用Workers AI 模板
+    *   单击继续以显示摘要
+    *   单击创建令牌
+    *   复制您的令牌，设置环境变量
+
 3.  **一台 VPS 服务器**: 推荐使用 Ubuntu 或 Debian 系统。
 4.  **Node.js**: 推荐 v18 或更高版本 (教程中使用 `nvm` 进行安装)。
 5.  **Git**: 用于从代码仓库克隆项目。
