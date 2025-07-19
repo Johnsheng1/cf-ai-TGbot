@@ -1,0 +1,25 @@
+{
+  "name": "cf-ai-TGbot",
+  "version": "1.0.0",
+  "description": "A Telegram bot with Cloudflare AI Gateway integration, context memory, and model switching.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "telegram",
+    "bot",
+    "cloudflare",
+    "ai",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "dotenv": "^16.6.1",
+    "marked": "^16.1.1",
+    "telegraf": "^4.16.3"
+  }
+}
