@@ -118,8 +118,6 @@ pm2 save
 *   `ALLOWED_MODELS`: 在这里添加、删除或修改可用的 AI 模型列表。键是用户输入的命令，值是 Cloudflare 的模型路径。
 *   `MAX_CONTEXT_MESSAGES`: 调整上下文记忆的消息数量。数字越大，记忆越长，但成本和延迟也可能更高。
 
-修改完代码后，只需在服务器上运行 `git pull` 拉取最新代码，然后运行 `pm2 restart telegram-bot` 即可生效。
-
 ---
 
 
