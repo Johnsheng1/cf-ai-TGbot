@@ -13,6 +13,8 @@
 *   **🎯 智能触发机制**: 机器人不会干扰群组正常聊天。它只会在被 **@提及** 或 **回复** 其消息时才会被激活。
 *   **🛠️ 完整的命令支持**: 内置 `/start`, `/help`, `/clear` 和 `/setmodel` 等实用命令，方便用户使用和管理。
 *   **🚀 易于部署**: 使用 Node.js 和 PM2，可以轻松地在任何 VPS 上实现 7x24 小时稳定运行。
+*   应用实例（screenshots）
+*   ![6VN0BedfMx69PpBn5U1qS8LHMJGnbxyE.webp](https://cdn.nodeimage.com/i/6VN0BedfMx69PpBn5U1qS8LHMJGnbxyE.webp)
 
 ---
 
