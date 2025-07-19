@@ -34,16 +34,9 @@
 
 按照以下步骤在你的 VPS 上从零开始部署此机器人。
 
-### 1. 连接到 VPS 并安装基础环境
+### 1. 安装基础环境
 
-首先，通过 SSH 登录到你的服务器。
-
-```bash
-# 将 your_server_ip 替换为你的 VPS 公网 IP
-ssh root@your_server_ip
-```
-
-然后，安装 Node.js (通过 nvm) 和 Git。
+首先，安装 Node.js (通过 nvm) 和 Git。
 
 ```bash
 
