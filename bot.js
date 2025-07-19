@@ -23,8 +23,8 @@ const PRESET_PROMPT = {
 const ALLOWED_MODELS = {
     'llama3': 'workers-ai/@cf/meta/llama-3-8b-instruct',
     'mistral': 'workers-ai/@cf/mistral/mistral-7b-instruct-v0.1',
-    'gpt4o-mini': 'openai/gpt-4o-mini',
-    'gpt3.5': 'openai/gpt-3.5-turbo',
+    'qwq-32b': 'workers-ai/@cf/qwen/qwq-32b',
+    'qwen1.5-1.8b-chat': 'workers-ai/@cf/qwen/qwen1.5-1.8b-chat',
 };
 
 let currentModel = ALLOWED_MODELS['llama3'];
