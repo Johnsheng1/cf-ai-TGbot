@@ -6,15 +6,24 @@ DEMO：https://t.me/CFAIFreeTGbot
 
 ---
 
+
 ## ✨ 核心特性
 
 *   **⚡️ Cloudflare AI Gateway 集成**: 所有 AI 请求都通过 Cloudflare 进行路由，方便你进行日志记录、分析和缓存，同时保护你的后端 AI 提供商密钥。
-*   **🧠 上下文对话记忆**: 机器人能够记住在群组中的对话历史，实现流畅的连续问答。记忆长度可控，以防止超出模型限制。
-*   **🤖 动态模型切换**: 只需一条简单的命令 (`/setmodel`)，即可在多个预设的 AI 模型之间（如 Llama 3, Mistral 等）动态切换。
+*   **🧠 上下文对话记忆**: 机器人能够记住在群组中的对话历史，实现流畅的连续问答。记忆长度可控。
 *   **🎨 优雅的格式化回复**: 自动将 AI 生成的 Markdown 文本转换为 Telegram 支持的 HTML 格式，完美显示代码块、加粗、斜体和列表。
-*   **🎯 智能触发机制**: 机器人不会干扰群组正常聊天。它只会在被 **@提及** 或 **回复** 其消息时才会被激活。
-*   **🛠️ 完整的命令支持**: 内置 `/start`, `/help`, `/clear` 和 `/setmodel` 等实用命令，方便用户使用和管理。
+*   **🎯 多种触发机制**:
+    *   在被 **@提及** 或 **回复** 其消息时激活。
+    *   可设置特定**关键词**，当群内出现该关键词时自动回应。
+*   **💬 聊天级别高度自定义**:
+    *   **独立人设**: 可为每个群组或私聊设置完全不同的背景人设 (`/background`)。
+    *   **独立模型**: 可为每个聊天指定不同的 AI 模型 (`/setmodel`)。
+    *   **独立关键词**: 可为每个群组设置不同的关键词回复 (`/notice`)。
+*   **🛠️ 强大的命令系统**:
+    *   **思考过程控制**: 可使用 `/showthink` 命令决定是否显示 AI 的思考过程。
+    *   **一键重置**: 使用 `/clear` 清空记忆，或使用 `/reset` 将特定聊天的所有设置恢复为默认值。
 *   **🚀 易于部署**: 使用 Node.js 和 PM2，可以轻松地在任何 VPS 上实现 7x24 小时稳定运行。
+
 *   应用实例（screenshots）
 *   ![6VN0BedfMx69PpBn5U1qS8LHMJGnbxyE.webp](https://cdn.nodeimage.com/i/6VN0BedfMx69PpBn5U1qS8LHMJGnbxyE.webp)
 *   ![ZWhAFJFTylEOEkgY2a4nWqtaebkCDyl3.webp](https://cdn.nodeimage.com/i/ZWhAFJFTylEOEkgY2a4nWqtaebkCDyl3.webp)
