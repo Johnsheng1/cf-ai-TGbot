@@ -127,6 +127,8 @@ bot.command('help', (ctx) => {
 <b>模型切换示例:</b>
 <code>/setmodel llama3</code>
 
+<b>请给我的GitHub项目点上star⭐，您的支持是我最大的动力</b>
+<b>GitHub项目地址：https://github.com/Johnsheng1/cf-ai-TGbot</b>
 祝您使用愉快！
     `;
     // 使用 parse_mode: 'HTML' 来发送格式化消息
