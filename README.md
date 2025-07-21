@@ -1,4 +1,4 @@
-# CF-ai-TGbot
+# CF-ai-TGbot:A powerful TG bot based on Cloudflare AI Gateway🚀
 # 请帮我点上Star✨，你的支持是对我最大的鼓励
 这是一个功能强大、可高度自定义的 Telegram 机器人，由 Node.js 驱动。它通过 Cloudflare AI Gateway 连接到各种大语言模型 (LLM)，实现了智能、带有上下文记忆的连续对话功能。
 
