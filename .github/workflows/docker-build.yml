@@ -1,0 +1,51 @@
+# .github/workflows/docker-publish.yml
+
+name: Build and Push Docker Image to GHCR
+
+# 触发器：当有代码推送到 main 分支时运行
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-push:
+    # 运行环境
+    runs-on: ubuntu-latest
+
+    # 设置权限，允许工作流向 GitHub Packages 写入内容
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      # 步骤1: 检出代码
+      # Actions 需要先获取你的仓库代码才能访问 Dockerfile
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 步骤2: 登录到 GitHub Container Registry (ghcr.io)
+      # 这样才有权限推送镜像
+      - name: Log in to the Container registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }} # 你的 GitHub 用户名
+          password: ${{ secrets.GITHUB_TOKEN }} # 由 GitHub 自动提供的令牌
+
+      # 步骤3: 提取 Docker 镜像的元数据 (例如标签)
+      # 这会自动为镜像生成合适的标签，例如 'latest', 'sha-xxxxxx'
+      - name: Extract metadata (tags, labels) for Docker
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ghcr.io/${{ github.repository }} # 镜像的完整名称，例如 ghcr.io/johnsheng1/cf-ai-tgbot
+
+      # 步骤4: 构建 Docker 镜像并推送到 GHCR
+      # 这是核心步骤，使用我们编写的 Dockerfile
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: . # Dockerfile 的路径 (当前目录)
+          push: true # 确认执行推送操作
+          tags: ${{ steps.meta.outputs.tags }} # 使用上一步生成的标签
+          labels: ${{ steps.meta.outputs.labels }} # 使用上一步生成的元数据标签
