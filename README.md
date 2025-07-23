@@ -15,7 +15,7 @@ docker run -d \
   -e CLOUDFLARE_API_TOKEN="YOUR_CLOUDFLARE_API_TOKEN" \
   -e CLOUDFLARE_ACCOUNT_ID="YOUR_CLOUDFLARE_ACCOUNT_ID" \
   -e CLOUDFLARE_GATEWAY_NAME="YOUR_AI_GATEWAY_NAME" \
-  ghcr.io/johnsheng1/cf-ai-tgbot:latest
+  ghcr.io/johnsheng1/cf-ai-tgbot:main
 
 ```
 
