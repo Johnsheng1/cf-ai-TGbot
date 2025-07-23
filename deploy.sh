@@ -5,7 +5,7 @@
 #
 # --- 配置 ---
 # Docker 镜像和容器名称
-IMAGE_NAME="ghcr.io/Johnsheng1/cf-ai-tgbot"
+IMAGE_NAME="ghcr.io/johnsheng1/cf-ai-tgbot:main"
 CONTAINER_NAME="cf-ai-tgbot"
 
 # --- 颜色定义 ---
