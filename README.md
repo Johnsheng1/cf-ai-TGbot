@@ -5,7 +5,12 @@
 DEMO：https://t.me/CFAIFreeTGbot
 
 ---
+## 一键启动！
+```bash
 
+curl -s https://raw.githubusercontent.com/Johnsheng1/cf-ai-TGbot/main/deploy.sh | bash
+
+```
 
 ## ✨ 核心特性
 
