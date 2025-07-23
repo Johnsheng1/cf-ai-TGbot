@@ -4,8 +4,7 @@ name: Build and Push Docker Image to GHCR
 
 # 触发器：当有代码推送到 main 分支时运行
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch
 
 jobs:
   build-and-push:
